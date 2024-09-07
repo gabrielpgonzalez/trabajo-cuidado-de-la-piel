@@ -1,0 +1,184 @@
+/* Estilos Generales */
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(225, 251, 255);
+}
+
+header {
+  background-color: #33368a;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.hero {
+  height: 40vh;
+  width: 100%;
+  background-image: url(../img/uvsolar.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* Asegura que la imagen cubra todo el área visible */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.hero-content {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 35px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: grey;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.content {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.sidebar h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Contenedor de las cards */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Centra las cards en el contenedor */
+  padding: 20px;
+}
+
+/* Estilos para las cards */
+.card {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 400px; /* O puedes establecer un ancho máximo si no quieres que sea demasiado grande */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background-color: white;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.card p {
+  color: #555;
+  font-size: 1em;
+}
+
+/* Efecto hover */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover img {
+  filter: brightness(0.8);
+}
+
+/* Footer */
+footer {
+  background-color: #33368a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .social a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .subscription input,
+footer .subscription button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+}
+
+footer .subscription button {
+  background-color: #ff4b4b;
+  color: white;
+  cursor: pointer;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+    background-color: #33368a;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    padding: 20px 0 0;
+  }
+}
