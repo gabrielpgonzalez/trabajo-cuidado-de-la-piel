@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d151ec99fa.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./assets/img/sun.png" type="image/png">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Cuidado de la piel</title>
@@ -16,11 +17,11 @@
     <header>
         <nav id="menu">
             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-            <ul id="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Sobre mí</a></li>
-                <li><a href="#">Contacto</a></li>
+            <ul id="nav-links" class="navLinks">
+                <li><a href="#main">Inicio</a></li>
+                <li><a href="./enfermedades.html">Enfermedades</a></li>
+                <li><a href="./proteccion.html">Protección</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -34,21 +35,31 @@
 
     <!-- Main y Sidebar -->
     <main>
-        <section class="content">
-            <h2>Bienvenido a mi página</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa cum qui quae optio, facilis minus obcaecati laborum ea dicta architecto reiciendis, modi sequi temporibus minima nemo. Provident dolorem nisi laboriosam.
-                <br><br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, asperiores, illum quisquam consequuntur provident ea autem voluptas repellat ea minus, quidem veniam in accusamus. Aperiam, minus veniam. Quae, neque.
-                <br><br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore blanditiis saepe laborum sint nulla et rem hic harum dolorum suscipit assumenda perferendis eveniet doloremque mollitia, non, consequatur, vel similique ipsa.
-            </p>
+        <section id="main" class="content">
+            <div>
+                
+                <h2>La situación en Chile</h2>
+                <p>En Chile, la exposición prolongada al sol representa un grave problema de salud pública, especialmente en lo que  respecta a la incidencia de cáncer de piel. A pesar de que cada vez más personas están conscientes del cuidado de la piel, muchas aún no utilizan protector solar de forma regular, lo que ha contribuido a que el país registre una alta tasa de mortalidad debido a tumores malignos relacionados con la piel. 
+                    <br><br>
+                La situación se agrava porque gran parte de la población no tiene el hábito de usar protector solar diariamente, lo que incrementa su vulnerabilidad a los efectos dañinos del sol, como el cáncer de piel, la hiperpigmentación y      enfermedades como la rosácea.
+                    <br><br>
+                Aunque los efectos no se perciban inmediatamente, estos pueden manifestarse años después, afectando gravemente a las personas en la adultez y en la vejez. Es necesario, por lo tanto, no subestimar los peligros de la radiación solar, ya que, aunque sus efectos son silenciosos, pueden ser fatales si no se toman medidas preventivas como el uso constante de protector solar. <br>
+                Por lo tanto, nuestro objetivo principal es proporcionar información detallada y crucial acerca de los rayos UV, sus efectos nocivos en la piel y las consecuencias a largo plazo de la exposición sin protección. Queremos educar a la población sobre la importancia de tomar medidas preventivas, como el uso constante de protector solar y ropa adecuada.
+                </p>
+            </div>
+            <br>
+            <div>
+                <h3>La situación en Chile</h3>
+                <p>En este análisis se observa que la tasa de mortalidad por cáncer de piel (melanomas) ha ido aumentando con los años, probablemente debido al escaso o nulo uso de protector solar. Es fundamental empezar a cuidar la piel desde una edad temprana, ya que el daño solar se acumula con el tiempo y aumenta el riesgo de desarrollar cáncer en la adultez.</p>
+                <p><img src="./assets/img/sit-chile.jpg" alt="tablaChile"></p>
+            </div>
         </section>
 
         <aside class="sidebar">
             <h3>Consejos para proteger tú piel</h3>
             <div class="card-container">
                 <div class="card">
-                    <img src="./assets/img/sb-1.jpg" alt="Imagen de Card">
+                    <img src="./assets/img/sb-1.jpg" alt="bloqueadorSolar">
                     <div class="card-content">
                         <h3>Uso de protector solar</h3>
                         <p>Aplica un protector solar de un factor minimo de 30 cada vez que vayas a exponerte al sol y reaplica cada 2 horas.</p>
@@ -56,7 +67,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="./assets/img/sb-2.jpg" alt="Imagen de Card">
+                    <img src="./assets/img/sb-2.jpg" alt="protegerteDelSol">
                     <div class="card-content">
                         <h3>Evitar el sol</h3>
                         <p>Evita exponerte a los rayos UV entre las 12 y 16hrs. Ya que en este horario son más fuertes.</p>
@@ -64,7 +75,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="./assets/img/sb-3.jpg" alt="Imagen de Card">
+                    <img src="./assets/img/sb-3.jpg" alt="accesoriosDelSol">
                     <div class="card-content">
                         <h3>Utiliza prendas para protegerte</h3>
                         <p>Usa lentes o sombreros para proteger tú piel de los rayos UV</p>
@@ -75,11 +86,12 @@
     </main>
 
     <!-- Footer con redes sociales y suscripción -->
-    <footer>
+    <footer id="contact">
         <div class="social">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i>Twitter</a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
         </div>
         <div class="subscription">
             <input type="email" placeholder="Correo electrónico">
