@@ -163,6 +163,16 @@ a:hover {
   color: red; /* Color al pasar el mouse sobre el enlace */
 }
 
+.social a {
+  color: rgb(255, 255, 255); /* Color inicial de los enlaces */
+  text-decoration: none; /* Sin subrayado por defecto */
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.social a:hover {
+  color: red; /* Color al pasar el mouse sobre el enlace */
+}
+
 /* Footer */
 footer {
   background-color: #33368a;
