@@ -90,9 +90,9 @@ main {
 }
 
 .sick-img {
-  width: 600px;
-  height: auto;
-  height: fit-content;
+  width: 700px;
+  height: 500px;
+  padding-right: 100px;
 }
 
 /* Footer */

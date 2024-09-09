@@ -68,6 +68,12 @@ main {
   padding-right: 20px;
 }
 
+main img {
+  width: 600px;
+  height: auto;
+  object-fit: fill;
+}
+
 .content {
   flex: 3;
   padding-left: 5%;
